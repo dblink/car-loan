@@ -22,10 +22,11 @@
         <div class="nav">
             <ul class="">
                 <li><a href="#slide">首页</a></li>
-                <li><a href="#product">产品中心</a></li>
                 <li><a href="#about">关于我们</a></li>
-                <li><a href="#cooperation">合作伙伴</a></li>
+                <li><a href="#safe">安全保障</a></li>
+                <li><a href="#product">产品介绍</a></li>
                 <!--<li><a href="#join">招商加盟</a></li>-->
+                <li><a href="#scene">使用场景</a></li>
                 <li><a href="#contact">联系我们</a></li>
             </ul>
         </div>
@@ -78,56 +79,6 @@
     });
 </script>
 
-<!--产品中心-->
-<!--<div class="product container" id="product">
-    <div class="container1">
-        <ul class="product_content">
-            <li>
-                <img src="src/img/product/icon1.png" alt="">
-                <h5>行为雷达</h5>
-                <p>依据贷款人在互联网金融机构的跨平台信贷申请行为对用户的信贷准入进行实时评估</p>
-            </li>
-            <li>
-                <img src="src/img/product/icon2.png" alt="">
-                <h5>实时风险监测</h5>
-                <p>通过对实时交易数据的大数据分析，分析用户是否有异常贷款、借新还旧、信用恶化等分析，并对商户进行告警</p>
-            </li>
-            <li>
-                <img src="src/img/product/icon3.png" alt="">
-                <h5>消费评估报告</h5>
-                <p>根据授权人京东、淘宝、支付宝等消费历史，分析个人购买能力、区域分布构建用户消费画像</p>
-            </li>
-            <li>
-                <img src="src/img/product/icon4.png" alt="">
-                <h5>通讯行为画像</h5>
-                <p>基于信息采集技术，依据个人授权，识别个人通话统计、手机消费、上网历史等信息</p>
-            </li>
-        </ul>
-        <ul class="product_content">
-            <li>
-                <img src="src/img/product/icon5.png" alt="">
-                <h5>银行卡认证</h5>
-                <p>基于姓名、身份证、银行卡号、手机号等交叉识别各信息一致性</p>
-            </li>
-            <li>
-                <img src="src/img/product/icon6.png" alt="">
-                <h5>实名认证</h5>
-                <p>基于姓名、身份证号识别信息一致性，并提供身份证、本人信息匹配性识别</p>
-            </li>
-            <li>
-                <img src="src/img/product/icon7.png" alt="">
-                <h5>运营商认证</h5>
-                <p>基于授权人姓名、身份证号、手机号（移动、联通、电信）等信息交叉识别各信息一致性</p>
-            </li>
-            <li>
-                <img src="src/img/product/icon8.png" alt="">
-                <h5>生物识别</h5>
-                <p>基于生物识别技术，结合身份证信息综合识别本人操作、人／证信息一致性</p>
-            </li>
-        </ul>
-    </div>
-</div>-->
-
 <!--关于我们-->
 <div class="about-us" id="about" style="padding: 30px;">
     <div class="container1" style="max-width: 1100px;">
@@ -150,18 +101,9 @@
 
         </div>
     </div>
-    <!--<div class="title">
-        <span></span>
-        <div class="square_small"></div>
-        <div class="square_big"></div>
-        <p style="color: white">关 于 我 们</p>
-        <div class="square_big"></div>
-        <div class="square_small"></div>
-        <span></span>
-    </div>-->
 </div>
 
-<div style="background: url('src/img/intro/bg.jpg') center no-repeat; background-size: cover; padding-bottom: 30px">
+<div id="safe" style="background: url('src/img/intro/bg.jpg') center no-repeat; background-size: cover; padding-bottom: 30px">
     <div class="container1" style="max-width: 1100px;">
         <h2 class="text-center" style="color: #fff;padding: 30px 0">安全保障</h2>
         <div class="clear-both" >
@@ -204,7 +146,7 @@
 
     })($)
 </script>
-<div>
+<div id="product" >
     <div class="container1" style="max-width: 1100px;">
         <h2 class="text-center" style="padding: 30px 0">
             产品介绍
@@ -214,14 +156,17 @@
         </div>
     </div>
 </div>
-<div>
+<div id="scene" style="background: url('src/img/scene/bg.jpeg') center no-repeat; background-size: cover; padding-bottom: 60px">
     <div class="container1" style="max-width: 1100px;">
-        <h2 class="text-center" style="padding: 30px 0">
+        <h2 class="text-center" style="padding: 30px 0; color: #fff">
             使用场景
         </h2>
         <ul class="clear-both">
             <li class="block-5 scene">
-                <div style="background: rgba(255,255,255,0.51)">
+                <div>
+                    <div class="text-center scene-icon">
+                        <img src="src/img/scene/p1.png" />
+                    </div>
                     <h3 class="text-center">
                         P2P汽车网贷
                     </h3>
@@ -232,6 +177,10 @@
             </li>
             <li class="block-5 scene">
                 <div>
+                    <div class="text-center scene-icon">
+                        <img src="src/img/scene/p2.png" />
+                    </div>
+
                     <h3>
                         汽车消费金融
                     </h3>
@@ -242,6 +191,9 @@
             </li>
             <li class="block-5 scene">
                 <div>
+                    <div class="text-center scene-icon">
+                        <img src="src/img/scene/p3.png" />
+                    </div>
                     <h3>
                         二手车金融
                     </h3>
@@ -252,6 +204,9 @@
             </li>
             <li class="block-5 scene">
                 <div>
+                    <div class="text-center scene-icon">
+                        <img src="src/img/scene/p4.png" />
+                    </div>
                     <h3>汽车电商</h3>
                     <p>
                         汽车供应商/经销商利用自身的车源和销售渠道，将传统的线下买卖拓展到线上，既解决了资金问题，同时用户也可定制个性化产品。
@@ -260,6 +215,9 @@
             </li>
             <li class="block-5 scene">
                 <div>
+                    <div class="text-center scene-icon">
+                        <img src="src/img/scene/p5.png" />
+                    </div>
                     <h3>
                         汽车租赁共享
                     </h3>
@@ -278,54 +236,6 @@
 
 </div>
 
-<!--合作伙伴-->
-<!--<div class="cooperation" id="cooperation">
-    <div class="title">
-        <span></span>
-        <div class="square_small"></div>
-        <div class="square_big"></div>
-        <p>合 作 伙 伴</p>
-        <div class="square_big"></div>
-        <div class="square_small"></div>
-        <span></span>
-    </div>
-    <div class="container2">
-        <ul class="cooperation_content">
-            <li>
-                <a href="https://www.cqfmbank.com/" target="_blank"><img src="src/img/cooperation/co1.png" alt=""></a>
-
-            </li>
-            <li>
-                <a href="https://www.aliyun.com/" target="_blank"><img src="src/img/cooperation/co2.png" alt=""></a>
-
-            </li>
-            <li>
-                <a href="https://www.baofu.com/static/index.html" target="_blank"><img src="src/img/cooperation/co3.png" alt=""></a>
-
-            </li>
-            <li>
-                <a href="https://www.95epay.com/" target="_blank"><img src="src/img/cooperation/co4.png" alt=""></a>
-
-            </li>
-        </ul>
-        <ul class="cooperation_content">
-            <li>
-                <a href="https://www.xinyan.com/" target="_blank"><img src="src/img/cooperation/co5.png" alt=""></a>
-
-            </li>
-            <li>
-                <a href="http://www.xin.xin/#/home" target="_blank"><img src="src/img/cooperation/co7.png" alt=""></a>
-
-            </li>
-            <li>
-                <a href="https://www.zhichengcredit.com/zc/" target="_blank"><img src="src/img/cooperation/co6.png" alt=""></a>
-
-            </li>
-
-        </ul>
-    </div>
-</div>-->
-
 <!--联系我们-->
 <div class="contact" id="contact">
     <div class="contact_content">
@@ -335,15 +245,15 @@
                 <span></span>
                 <div class="contact_content_divide">
                     <img src="src/img/contact/phone.png" alt="">
-                    <p>400-606-3322</p>
+                    <p>xxxx</p>
                 </div>
                 <div class="contact_content_divide">
                     <img src="src/img/contact/mail.png" alt="">
-                    <p>hz@chinaytjf.com</p>
+                    <p>xxx</p>
                 </div>
                 <div class="contact_content_divide">
                     <img src="src/img/contact/address.png" alt="">
-                    <p>苏州市工业园区渠诚大厦207室</p>
+                    <p>xxxx</p>
                 </div>
             </div>
         </div>
@@ -355,7 +265,10 @@
 
 <!--foot-->
 <div class="footer">
+    <!--
     <p>All rights reserved © YTJF DATA缘天金服有限公司  苏ICP备17066222号-2</p>
+    -->
+    <p>All rights reserved </p>
 </div>
 
 </body>

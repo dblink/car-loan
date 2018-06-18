@@ -202,16 +202,24 @@
 }
 
 .scene{
-    padding: 10px;
+    padding: 10px 10px 40px 10px;
     color: #666;
     transition: .5s;
-    height: 300px;
+    height: 400px;
+    background: #fff;
 }
 .scene h3{
     text-align: center;
+    padding: 10px;
 }
 .scene p{
     font-size: 14px;
+    text-indent: 28px;
+    padding: 10px;
+}
+.scene-icon img{
+    width: 80%;
+    padding: 30px;
 }
 .scene:hover{
     transform: translateY(-20px) scale(1.03);
