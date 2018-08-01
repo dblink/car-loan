@@ -44,6 +44,9 @@ a:hover{
     clear: both;
     width: 0;
 }
+.float-left{
+    float: left;
+}
 .block-2{
     width: 50%;
     float: left;
@@ -54,6 +57,10 @@ a:hover{
 }
 .block-4{
     width: 25%;
+    float: left;
+}
+.block-6{
+    width: 75%;
     float: left;
 }
 .block-5{

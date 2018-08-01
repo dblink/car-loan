@@ -226,6 +226,74 @@
 
 
 </div>
+<div id="apply" style="background: #eee">
+    <div class="container1 text-center" style="padding-bottom: 30px; max-width: 1100px;">
+        <h2 style="padding: 30px;">申请借款</h2>
+        <!--<img src="src/img/join/address.jpeg" style="width: 100%;max-width: 800px" />-->
+        <div class="clear-both">
+            <div class="float-left" style="width: 60%;padding-top: 20px">
+                <div class="block-3">
+                    <img src="src/img/apply/applyDate.png" />
+                    <p>
+                        贷款期限长达3年
+                    </p>
+                </div>
+                <div class="block-3">
+                    <img src="src/img/apply/applyMoney.png" />
+                    <p>
+                        最高可贷50万
+                    </p>
+                </div>
+                <div class="block-3">
+                    <img src="src/img/apply/applyTime.png" />
+                    <p>
+                        材料齐全，最快1天放款
+                    </p>
+                </div>
+            </div>
+
+            <div class="float-left" style="width: 40%">
+                <form onsubmit="act(event)">
+                    <div class="form-row">
+                        <div class=" addon">
+                            <img src="src/img/icon/phone.png" style="height: 100%"/>
+                        </div>
+                        <div>
+                            <input name="name" class="input" type="text" placeholder="请输入姓名" />
+                        </div>
+                    </div>
+
+                    <div class="form-row" >
+                        <div class=" addon">
+                            <img src="src/img/icon/money.png" style="height: 100%"/>
+                        </div>
+                        <div>
+                            <input name="money" class="input" type="tel" placeholder="请输入身份证" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="inline-block addon">
+                            <img src="src/img/icon/user.png" style="height: 100%"/>
+                        </div>
+                        <div class="inline-block">
+                            <input name="phone" class="input" type="tel" placeholder="请输入手机号" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <button type="submit" class="btn"
+                                style=" border: none; border-radius: 5px; width: 240px; height: 40px">
+                            立即申请
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 <!--联系我们-->
 <div id="contact" class="contact">
     <div class="container1 text-center" style="padding-bottom: 30px;">
@@ -234,6 +302,26 @@
     </div>
 </div>
 
+<script>
+    function act(event) {
+        event.preventDefault();
+        //console.log(event.target['name'].value);
+        var array = ['name', 'money', 'phone'],
+            n=0;
+        for(var i=0; i<array.length; i++){
+            if(event.target[i].value === ''){
+                break;
+            }
+            n++;
+        }
+        //console.log(n, array.length);
+        if(n === array.length){
+            alert('提交成功！');
+        }else{
+            alert('关键字不能为空！');
+        }
+    }
+</script>
 <!--foot-->
 <div class="footer">
     <p>All rights reserved © 有车有贷金融信息服务有限公司 <a href="http://www.miibeian.gov.cn/" target="_blank">苏ICP备18040759号-2</a></p>

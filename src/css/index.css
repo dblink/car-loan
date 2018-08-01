@@ -576,3 +576,59 @@
     cursor: pointer;
     border: none;
 }
+.select{
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+}
+.select, .input{
+    width: 200px;
+    height: 40px;
+    /*border: 0;*/
+    border: none;
+}
+.input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.select:focus,
+.input:focus,
+.btn:focus{
+    outline: none;
+    /*border: 1px solid #ff5960;*/
+}
+.btn{
+    background: #ff5960;
+}
+.btn:hover{
+    background: #ff95a1;
+}
+.form-row{
+    letter-spacing: -7px;
+    margin-top: 10px;
+}
+.form-row > div:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: #ccc solid;
+    border-width: 1px 0 1px 1px;
+
+}
+.form-row > div{
+    display: inline-block;
+    vertical-align: top;
+}
+.form-row > div:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: #ccc solid;
+    border-width: 1px 1px 1px 0;
+}
+.addon{
+    height: 42px;
+    padding: 10px;
+
+}
+.inline-block{
+    display: inline-block;
+}
